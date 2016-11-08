@@ -1,0 +1,16 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
+
+// Scss files
+@import "colors.scss";
+@import "mixin.scss";
+
+@import "main-content.scss";
+@import "menu.scss";
+@import "buttons.scss";
+@import "greenbar.scss";
+@import "student-list.scss";
+@import "modal.scss";
+
+//media queries
+@import "media-queries.scss";

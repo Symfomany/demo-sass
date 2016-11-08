@@ -1,0 +1,11 @@
+/************************** FONCTIONS ****************************/
+// @mixin permet de créer une fonction en SASS
+
+@mixin inputBeautify($radius, $border, $font) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+          border: $border;
+          font-family: $font;
+}

@@ -1,0 +1,107 @@
+/* -- 1 Green bar -- */
+#tableBar {
+	 	min-height: 50px;
+	 	background-color: $main-color;
+	 	color: white;
+	 	text-transform: uppercase;
+	 	font-size: 12px;
+	 	font-weight: bold;
+	 	padding: 20px 35px;
+	 	position: relative;
+	& * {
+	 	display: inline-block;
+	}
+
+	ul {
+	  	display: inline-block;
+	  	padding: 0;
+	    height: 0;
+
+			li {
+				display: inline-block;
+				position: relative;
+				float: left;
+				width: 15px;
+				height: 15px;
+				margin-right: 10px;
+				z-index: 0;
+
+					#selectAll {
+						  position: absolute;
+						  visibility: hidden;
+						  /* z-index: 1; */
+						  top:-5px;
+
+							&:checked ~ .check {
+							  border: 2px solid $white;
+
+							  	&:before{
+							  		background: $white;
+							  	}
+
+							}
+
+					}
+
+					label {
+					    position: relative;
+					    border-radius: 50%;
+						height: 15px;
+						width: 25px;
+				    	opacity: 0.5;
+					    z-index: 6;
+					    cursor: pointer;
+					    @include transition(all 0.25s linear);
+					}
+
+					.check {
+						border: 2px solid rgba($white,0.5);
+						cursor:pointer;
+						border-radius: 50%;
+						height: 15px;
+						width: 15px;
+						/* z-index: 5; */
+				    	position: absolute;
+				    	top: -2px;
+				    	left:0;
+						@include transition(border .25s linear);
+
+
+						&:before{
+							  display: inline-block;
+							  position: absolute;
+							  content: '';
+							  border-radius: 50%;
+							  height: 7px;
+						      width: 7px;
+						      top: 2px;
+						      left: 2px;
+							  transition: transition(background 0.25s linear);
+						}
+					}
+
+					&:hover .check {
+			  			border: 2px solid rgba($white,1);
+
+					}
+			}
+
+	}
+
+	p {
+		margin: 0;
+
+		.fa-caret-down:before{
+		    cursor: pointer;
+		 }
+	}
+
+	#nameTitle{
+	    width: 58%;
+	    margin-left: 14px;
+	}
+
+}
+
+
+/* -- END 1 Green bar -- */

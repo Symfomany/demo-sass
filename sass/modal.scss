@@ -1,0 +1,51 @@
+/* Modal */
+
+.modal-dialog {
+	margin-top: 100px;
+
+	.modal-title {
+		text-align: center
+	}
+
+	.modal-body {
+		margin: 30px 0;
+
+
+			.form .row > div > label {
+				float:right;
+			}
+
+				.form-control {
+					height: 32px;
+				    margin-top: -6px;
+				    display: inline-block;
+				    width: 100%;
+				    @include transition(all linear 0.3s);
+
+				    &:focus {
+						border-color: $main-color;
+				    	outline: 0;
+				    	-webkit-box-shadow: 0 0 3px rgba($main-color,0.4);
+				    	box-shadow: 0 0 3px rgba($main-color,0.4);
+				    }
+
+			}
+				.img-responsive {
+					margin-top:15px;
+					max-width:200px;
+					max-height:200px;
+				}
+	}
+
+}
+
+	.modal-body .form-control:focus {
+		border-color: #00c49e;
+    	outline: 0;
+    	-webkit-box-shadow: 0 0 3px rgba(0,196,158,0.4);
+    	box-shadow: 0 0 3px rgba(0,196,158,0.4);
+	}
+
+
+
+/* END Modal */

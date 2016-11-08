@@ -1,0 +1,23 @@
+/*  Importer les variables SCSS */
+@import 'partials/variables';
+@import 'partials/mixins';
+
+@import 'partials/buttons';
+@import 'partials/input';
+@import 'partials/alerts';
+
+
+body{
+
+  h1,h2,h3{
+    color: $primary;
+    font-family : $primary-font;
+  }
+
+  form{
+    input{
+      border: $second;
+    }
+  }
+
+}

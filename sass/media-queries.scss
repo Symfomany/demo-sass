@@ -1,0 +1,101 @@
+
+/*Media queries for container on smaller screens */
+
+@media only screen and (max-width: 992px) {
+
+	.container {
+	    width: 100%;
+	    padding:0;
+	}
+
+}
+
+
+
+/* ###### MEDIA QUERIES FOR MOBILE TABLET ###### */
+@media only screen and (min-width:768px) and (max-width:1023px) {
+
+	.btnUser {
+	    padding-bottom: 5px;
+	}
+
+	#studentsList .profil {
+	    width: 40%;
+	}
+
+	.modal-dialog .modal-body .form .row > div > label {
+		    float: left;
+		    margin-bottom: 8px;
+		}
+
+}
+/* END ###### MEDIA QUERIES FOR MOBILE TABLET ###### */
+
+
+/* ###### MEDIA QUERIES FOR MOBILE DEVICES ###### */
+@media only screen and (max-width:767px) {
+
+	.menu ul {
+	    width: 100%;
+	    margin: 0;
+	}
+
+	#tableBar {
+    	padding-left: 13px;
+
+		    #nameTitle {
+		    	width: 69%;
+			}
+	}
+
+	#studentsList .listUsers ul {
+	    padding-left: 13px;
+	}
+	
+	.btnUser {
+	    padding: 5px 11px!important;
+	    display:inline-block;
+
+			span {
+				display:none;
+			}
+	}
+
+	#actionsButtons {
+		display: inline-block;
+		height:100%;
+		width: 100%;
+
+		.actions {
+	    	max-height: 94px;
+			display: inline-block;
+			height:100%;
+			min-height: 50px;
+			padding: 10px 2%;
+    		width: 100%;
+
+			.actionBtn {
+			    margin: 6px 0 0 6px;
+			    width:100%;
+			    text-align:center;
+			    width:50%;
+			    margin: 0 auto; 
+			    float:left;
+
+			    &:nth-last-of-type(-n+2){
+				float:right;
+				}
+			}
+		}
+
+	}
+
+	.modal-dialog .modal-body .form .row > div > label {
+	    float: left;
+	    margin-bottom: 8px;
+	}
+	
+
+}
+
+/* END ###### MEDIA QUERIES FOR MOBILE DEVICES ###### */

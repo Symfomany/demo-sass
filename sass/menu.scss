@@ -1,0 +1,107 @@
+/*### Top Menu ### */
+	.menu {
+		height:125px;
+		background:linear-gradient(rgba($main-color,0.6), rgba($black,0.5));
+		position:relative;
+		display: block;
+
+			&:before {
+				content:'';
+				background-image: url('../../img/space-background.jpg');
+				width:100%;
+				height: 100%;
+				position: absolute;
+			    left: 0;
+			    top: 0;
+			    z-index: -1;
+			    opacity: 0.9;
+		    }
+
+
+			#btnBack {
+				color:white;
+				position:absolute;
+				font-size: 13px;
+				top:20px;
+				left:50px;
+
+					.fa-angle-left:before{
+						position:absolute;
+						font-size: 24px;
+						top:-4px;
+						left:-20px;
+						transition: 0.3s ease;
+						-webkit-transition: 0.3s ease;
+						-moz-transition: 0.3s ease;
+						-o-transition: 0.3s ease;
+					}
+
+					&:hover .fa-angle-left:before{
+						left:-24px;
+					}
+
+			}
+
+			h1 {
+				color:white;
+				margin: 0 auto;
+				text-align: center;
+				font-size: 24px;
+				font-weight: bold;
+				padding-top: 50px;
+			}
+
+			ul {
+				position: absolute;
+				bottom:0;
+				width: 65%;
+	    		margin: 0 17%;
+			    padding: 0;
+			    display: -ms-flexbox;
+			    display: -webkit-flex;
+			    display: flex;
+			    -webkit-justify-content: center;
+			    -ms-flex-pack: center;
+			    justify-content: center;
+
+					li {
+						width:33%;
+						display: inline-block;
+						padding:15px 0;
+						text-align: center;
+
+							a{
+								padding:15px 0;
+								text-transform: uppercase;
+								text-decoration:none;
+								color: rgba( $white, 0.7);
+								transition: all .15s ease-in-out;
+								-webkit-transition: all .15s ease-in-out;
+								-moz-transition: all .15s ease-in-out;
+								-o-transition: all .15s ease-in-out;
+								-webkit-box-shadow: inset 0 0px 0 0 rgba($main-color,0);
+								box-shadow: inset 0 0px 0 0 rgba($main-color,0);
+								border-bottom: solid 1px rgba($main-color,0);
+
+								&:hover {
+								    color: $white;
+									-webkit-box-shadow: inset 0 -3px 0 0 $main-color;
+									box-shadow: inset 0 -3px 0 0 $main-color;
+									border-bottom: solid 1px $main-color;
+								}
+							}
+
+							.active{
+								color:$white;
+								-webkit-box-shadow: inset 0 -3px 0 0 $main-color;
+								box-shadow: inset 0 -3px 0 0 $main-color;
+								border-bottom: solid 1px $main-color;
+							}
+
+					}
+
+			}
+
+}
+
+/* ### End Top Menu ###*/

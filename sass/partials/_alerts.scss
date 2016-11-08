@@ -1,0 +1,13 @@
+div.alert{
+  height: 50px;
+  width: 550px;
+  padding: 5px
+}
+div.error{
+  @extend div.alert;
+  width: 600px;
+}
+div.warn{
+  @extend div.alert;
+  height: 60px;
+}

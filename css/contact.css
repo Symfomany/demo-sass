@@ -1,0 +1,14 @@
+h3{
+  color: blue;
+  border-radius: 10px; 
+}
+p, div{
+  margin: 0
+}
+form input{
+  margin: 5px;
+
+}
+form label{
+  padding: 3px;
+}

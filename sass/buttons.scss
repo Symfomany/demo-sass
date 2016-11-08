@@ -1,0 +1,133 @@
+/* Actions buttons */
+.actions {
+	width:100%;
+	background-color:$white;
+	display: block;
+	min-height: 64px;
+	@include box-shadow(0 1px 1px rgba($black,0.2));
+	z-index: 2;
+	position: relative;
+}
+
+	.actionBtn {
+		position: relative;
+		display: inline-block;
+		border:1px solid $main-color;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: bold;
+		padding:10px 10px 10px 30px;
+		color:$main-color;
+		background-color:$white;
+		margin:14px 6px;
+		border-radius:2px;
+		@include transition(all 0.4s linear);
+
+			&:hover {
+				color:white;
+				background-color:#00c49e;
+			}
+
+			&:active:focus, .actionBtn:active {
+				outline:none;
+			}
+
+			&:nth-last-of-type(-n+2){
+				float:right;
+			}
+
+				i:before {
+					margin-right: 5px;
+					font-size: 15px;
+					position: absolute;
+					top: 9px;
+			    	left: 9px;
+				}
+
+				.fa-plus:before {
+					font-size: 14px;
+					top: 11px;
+			    	left: 10px;
+				}
+
+	}
+
+	.cancelBtn {
+	    color:rgba($black,0.5);
+	    border: 1px solid rgba($black,0.5);
+
+			&:hover {
+				color:$white;
+				background: rgba($black,0.4);
+		    	border: 1px solid rgba($black,0)
+			}
+
+	}
+
+
+
+/* End Actions buttons */
+
+/* Buttons on Student List */
+.btnUser {
+		z-index:7!important;
+		font-size: 13px;
+		text-decoration: none;
+		font-weight: bold;
+		position: relative;
+		padding-left: 30px!important;
+		cursor: pointer;
+		color: $link-user-list;
+		background-color: $white;
+
+
+		p {
+			margin:0;
+
+			.fa:before {
+			    margin-right: 10px;
+			    position: absolute;
+			    font-size: 18px;
+			    @include transition(0.3s ease);
+				@include transform(scale(0.8));
+				top:5px;
+				left: 7px;
+			}
+
+			&:hover .fa:before {
+				@include transform(scale(1));
+				@include transform(rotate(7deg));
+			}
+
+			&:hover, :focus, :active:focus {
+				text-decoration: underline;
+				color:$link-user-list-over;
+				outline: none;
+				box-shadow: none;
+			}
+
+		}
+
+		&:hover, :focus {
+				color:$link-user-list-over;
+				outline: none!important;
+				box-shadow: none!important;
+		}
+}
+
+.btnUser:active:focus {
+				color:$link-user-list-over;
+				outline: none!important;
+				box-shadow: none!important;
+		}
+
+	.btn.focus, .btn:focus, .btn:hover {
+	    color: #333;
+	    text-decoration: none;
+			outline: none!important;
+			box-shadow: none!important;
+			color: $link-user-list;
+
+	}
+
+/* END Buttons on Student List */

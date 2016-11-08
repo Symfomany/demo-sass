@@ -1,0 +1,38 @@
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	width:954px;
+}
+
+/* Content */
+#content {
+	background-color: #eff4f5;
+	min-height: 300px;
+	width:100%;
+	padding-bottom: 5px;
+}
+/* End Content */
+
+
+/* Footer */
+
+	footer > p {
+		text-align: center;
+		font-size: 12px;
+
+		a {
+		    color: #0da9ba;
+		    text-decoration: none;
+
+			&:hover {
+			    color: #56C3D5;
+			}
+
+		}
+	}
+
+/* End Footer */
+
